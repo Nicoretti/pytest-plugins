@@ -40,6 +40,12 @@ dev = [
     "mkdocs-material>=9.6.19",
 ]
 
+[tool.uv.workspace]
+members = [
+    "pytest-pytestdb",
+    "pytest-history",
+]
+
 
 [project.entry-points."pytest11"]
 pytest-artifacts = "pytest_storage"
