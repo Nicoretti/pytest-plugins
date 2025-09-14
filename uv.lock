@@ -370,7 +370,7 @@ wheels = [
 ]
 
 [[package]]
-name = "pytest-artifacts"
+name = "pytest-storage"
 version = "0.1.0"
 source = { editable = "." }
 dependencies = [

@@ -1,5 +1,5 @@
 [project]
-name = "pytest-artifacts"
+name = "pytest-storage"
 version = "0.1.0"
 description = "Pytest plugin to store test artifacts"
 authors = [{ name = "Nicola Coretti", email = "nico.coretti@gmail.com" }]
@@ -42,6 +42,6 @@ dev = [
 
 
 [project.entry-points."pytest11"]
-pytest-artifacts = "pytest_artifacts"
+pytest-artifacts = "pytest_storage"
 
 

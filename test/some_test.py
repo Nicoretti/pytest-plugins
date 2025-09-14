@@ -10,20 +10,15 @@ def testfile(tmp_path):
     yield file
 
 
-def test_something(storage, testfile):
-    storage.save(testfile)
+def test_smoke_pytestdb(pytestdb):
     assert True
 
 
-def test_something2(storage):
-    from inspect import cleandoc
-    with storage.open("somefile2.txt", "w") as f:
-        content = cleandoc(
-            """
-            Line 1
-            Line 2
-            Line 3
-            """
-        )
-        f.write(content)
+def test_smokie_session_storage(session_storage, testfile):
+    session_storage.save('testfile.txt', testfile)
+    assert True
+
+
+def test_smokie_test_storage(storage, testfile):
+    storage.save('testfile.txt', testfile)
     assert True
